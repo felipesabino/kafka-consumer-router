@@ -1,0 +1,22 @@
+{
+  "name": "kafka-consumer-router-example",
+  "private": true,
+  "version": "0.0.1",
+  "description": "An example of an consumer to route messages from kafka",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "kafka",
+    "consumer",
+    "batch",
+    "topic"
+  ],
+  "author": "Felipe Sabino <felipe@sabino.me>",
+  "license": "MIT",
+  "dependencies": {
+    "kafka-consumer-router": "../",
+    "lodash": "~2.2.1"
+  }
+}
