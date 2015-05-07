@@ -51,5 +51,5 @@ $ node run test
 ## TODO
 
 - [ ] Finish tests
-- [ ] Add Travis-CI
-- [ ] Publish to npm
+- [x] Add Travis-CI
+- [x] Publish to npm
