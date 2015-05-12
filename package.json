@@ -1,6 +1,6 @@
 {
   "name": "kafka-consumer-router",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Consume and route Kafka messages",
   "main": "index.js",
   "scripts": {
