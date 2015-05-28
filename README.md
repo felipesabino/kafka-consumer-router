@@ -1,6 +1,6 @@
 # Consume and route Kafka messages
 
-[![Build Status](https://img.shields.io/travis/felipesabino/kafka-consumer-router.svg?style=flat-square)](https://travis-ci.org/felipesabino/kafka-consumer-router)
+[![Build Status](https://img.shields.io/travis/tq1/kafka-consumer-router.svg?style=flat-square)](https://travis-ci.org/tq1/kafka-consumer-router)
 
 [![NPM](https://nodei.co/npm/kafka-consumer-router.png)](https://nodei.co/npm/kafka-consumer-router/)
 
