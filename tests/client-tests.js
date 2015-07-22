@@ -29,7 +29,7 @@ describe('Client', function() {
 
   it('should use provided options', function(done) {
 
-    var options = {connectionString: 'connectionString', client_id: 'client_id', zk_options: 'zk_options'};
+    var options = {connectionString: 'connectionString', client_id: 'client_id', zk_options: 'zk_options', zkMaxSessionTimeout: 30};
 
     kafkaStub.Client = function(connectionString, client_id, zk_options) {
       assert.equal(connectionString, options.connectionString);
@@ -45,7 +45,7 @@ describe('Client', function() {
 
     it('should route when received message', function(done) {
 
-      var options = {connectionString: 'connectionString', client_id: 'client_id', zk_options: 'zk_options'};
+      var options = {connectionString: 'connectionString', client_id: 'client_id', zk_options: 'zk_options', zkMaxSessionTimeout: 30};
       var c = client(options);
       var original_start_consumer = c._start_consumer;
       var consumer = null;
@@ -58,8 +58,9 @@ describe('Client', function() {
         assert.equal(messages[0], 'abc');
         done();
       });
-
-      consumer.emit('message', 'abc');
+      setTimeout(function() {
+        consumer.emit('message', 'abc');
+      }, 500);
 
     });
 

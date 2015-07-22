@@ -1,5 +1,7 @@
 var kafkaConsumer = require('kafka-consumer-router');
 var kafka = {
+  // // zkMaxSessionTimeout means the timeout zookeeper drops session and allow reconnects, when connecting before this period an exception will occur. Default is 30000ms.
+  // zkMaxSessionTimeout: 30000,
   connectionString: process.env.KAFKA_URL || '192.168.59.103:2181/'
 };
 
