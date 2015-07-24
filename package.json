@@ -15,7 +15,7 @@
   "author": "Felipe Sabino <felipe@sabino.me>",
   "license": "MIT",
   "dependencies": {
-    "kafka-node": "0.2.24",
+    "kafka-node": "0.2.27",
     "lodash": "~2.2.1",
     "async": "~0.9.0",
     "async-timed-cargo": "0.0.3"

@@ -31,8 +31,10 @@ producer.on('ready', function () {
   producer.send(payload, function (err, data) {
     if (err) {
       console.log(err);
+      process.exit(1);
     } else {
       console.log("ok");
+      process.exit(0);
     }
   });
 
